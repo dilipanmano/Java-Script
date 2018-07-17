@@ -1,0 +1,22 @@
+<!--JavaScript code to demonstrate conditional operator-->
+<html>
+<head>
+<title>Operator</title>
+
+<script>
+function func(){
+var mark,result;
+mark=document.getElementById("mark").value;
+result=(mark<40)?"Fail":"Pass";
+document.getElementById("abc").innerHTML="Result="+result;
+}
+</script>
+</head>
+
+<body>
+<input type="number" id="mark"><br>
+<button onclick="func()">Click Here</button>
+<p id="abc"></p>
+
+</body>
+</html>
