@@ -1,0 +1,21 @@
+<!--If case denonstration in Javascript-->
+<html>
+<head>
+<script>
+function func(){
+var mark=document.getElementById("val").value;
+if(mark>50)
+   document.getElementById("abc").innerHTML="pass";
+else
+   document.getElementById("abc").innerHTML="fail";
+}
+</script>
+</head>
+<body>
+<p><b>enter mark</b></p>
+<input type="number" id="val"><br>
+<button onclick="func()">result</button>
+<br>
+<p id="abc"></P>
+</body>
+</html>
