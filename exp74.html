@@ -1,0 +1,22 @@
+<!--HTML code to demonstrate select validation-->
+<html>
+<head>
+<title>Selection Mode Validation</title>
+</head>
+<body>
+<label>Select your country:</label>
+<select id="country"  >
+<option value="choose">--CHOOSE--</option>
+<option value="Australia">Australia</option>
+<option value="India">India</option>
+<option value="Irish">Ireland</option>
+<option value="Kiwies">Newzeland</option>
+</select><br>
+<button onclick="mycon()">Submit</button>
+<script>
+function mycon(){
+var m=document.getElementById("country").value;
+if(m =="choose"){alert("Please select a option")}}
+</script>
+</body>
+</html>

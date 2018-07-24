@@ -1,0 +1,18 @@
+<!--Javascript code to demonstrate prompt-->
+<html>
+<head>
+<title>Prompt</title>
+</head>
+<body>
+<button onclick="getname()">Click me to enroll</button>
+<p id="name"></p>
+<script>
+function getname(){
+var name=prompt("Enter your name");
+if (name!= null){
+document.getElementById("name").innerHTML=name+" has enrolled successfully";
+}
+}
+</script>
+</body>
+</html>

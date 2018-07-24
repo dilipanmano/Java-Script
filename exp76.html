@@ -1,0 +1,27 @@
+<!--HTML javascript code to demonstrate form validation-->
+<html>
+<head>
+<title>Form validation</title>
+</head>
+<body>
+<form name="myForm" >
+Name:<input type="text" name="name"><br><br>
+Email: <input type="text" name="email"><br><br>
+Address:<textarea rows="4" cols="50" name="comment" form="usrform">
+Enter text here...</textarea>
+</form>
+<button onclick="valid()" >Register</button>
+<script>
+function valid(){
+var x=document.forms["myForm"]["name"].value;
+var y = document.forms["myForm"]["email"].value;
+    var atpos = y.indexOf("@");
+    var dotpos = y.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=y.length || x =="") {
+        alert("Invalid Input");}
+    else{
+alert("Registred Successfully");}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!--Html javascript code to validity check numbers-->
+<html>
+<head>
+<title>Number Check</title>
+</head>
+<body>
+<label for="numb">Enter a number</label>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+
+<script>
+function myFunction() {
+    var x, text;
+
+    // Get the value of the input field with id="numb"
+    x = document.getElementById("numb").value;
+
+    // If x is Not a Number or less than one or greater than 10
+    if (isNaN(x) ) {
+        text = "Input not valid";
+    } else {
+        text = "Input OK";
+    }
+    alert(text);
+}
+</script>
+
+</body>
+</html> 

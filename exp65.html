@@ -1,0 +1,19 @@
+<!--Javascript code to demonstrate print()-->
+<html>
+<head>
+<title>Prompt</title>
+</head>
+<body>
+<button onclick="getname()">Confirm your booking by entering your name</button>
+<p id="name"></p>
+<script>
+function getname(){
+var name=prompt("Enter your name");
+if (name!= null){
+document.getElementById("name").innerHTML=name+" has booke=d ticket successfully";
+window.print();
+}
+}
+</script>
+</body>
+</html>
